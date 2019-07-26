@@ -1,0 +1,7 @@
+# vim: ft=ansible
+- name: install markitplace
+  hosts: local-markitplace
+  become: yes
+  roles:
+    - Datadog.datadog
+    - ces_markitplace
